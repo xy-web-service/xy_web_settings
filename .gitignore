@@ -1,0 +1,4 @@
+./xy_configure.egg-info/
+./dist/
+./build/
+__pycache__/
