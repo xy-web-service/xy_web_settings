@@ -24,6 +24,7 @@ xy-web-service Service settings module.
 ## 安装
 
 ```bash
+# bash
 pip install xy_web_settings
 ```
 
@@ -99,6 +100,7 @@ runner = "Runner.Runner"
 ```
 
 ```bash
+# bash
 python main.py
 # project ===> {'path': '/home/余洋/workspace/beachstudio/development/xy_web_demo', 'name': 'xy_web_demo', 'verbose_name': 'xy-web-service Demo', 'identifier': 'd842087be5204c85a8bef764815348b5', 'description': 'xy-web-service Demo'}
 # project.name ===> xy_web_demo
