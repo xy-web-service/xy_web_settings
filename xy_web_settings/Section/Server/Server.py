@@ -16,21 +16,21 @@ from xy_web_settings.Section.Section import *
 
 
 class Server(Section):
-    path: Path | None
+    path: Path | None = None
 
-    config_path: Path | None
+    config_path: Path | None = None
 
-    site_path: Path | None
+    site_path: Path | None = None
 
-    admin_path: Path | None
+    admin_path: Path | None = None
 
-    logs_path: Path | None
+    logs_path: Path | None = None
 
-    info_log: Path | None
+    info_log: Path | None = None
 
-    error_log: Path | None
+    error_log: Path | None = None
 
-    warn_log: Path | None
+    warn_log: Path | None = None
 
     def _load(self):
         ########## fetch_path ##########

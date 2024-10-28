@@ -16,17 +16,17 @@ from xy_web_settings.Section.Section import *
 
 
 class Resource(Section):
-    media_url: str | None
+    media_url: str | None = None
 
-    media_path: Path | None
+    media_path: Path | None = None
 
-    static_url: str | None
+    static_url: str | None = None
 
-    static_path: Path | None
+    static_path: Path | None = None
 
-    tmp_path: Path | None
+    tmp_path: Path | None = None
 
-    template_path: Path | None
+    template_path: Path | None = None
 
     def _load(self):
         ########## sync_data ##########

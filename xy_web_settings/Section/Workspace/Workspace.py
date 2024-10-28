@@ -16,7 +16,7 @@ from xy_web_settings.Section.Section import *
 
 
 class Workspace(Section):
-    path: Path | None
+    path: Path | None = None
 
     def _load(self):
         self.path = self._fetch_path("path", Path("../workspace/"))

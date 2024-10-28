@@ -16,13 +16,13 @@ from xy_web_settings.Section.Section import *
 
 
 class Log(Section):
-    path: Path | None
+    path: Path | None = None
 
-    info_log: Path | None
+    info_log: Path | None = None
 
-    error_log: Path | None
+    error_log: Path | None = None
 
-    warn_log: Path | None
+    warn_log: Path | None = None
 
     def _load(self):
         ########## fetch_path ##########

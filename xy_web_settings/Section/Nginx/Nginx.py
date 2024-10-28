@@ -16,13 +16,13 @@ from xy_web_settings.Section.Section import *
 
 
 class Nginx(Section):
-    path: Path | None
+    path: Path | None = None
 
-    logs_path: Path | None
+    logs_path: Path | None = None
 
-    error_log: Path | None
+    error_log: Path | None = None
 
-    access_log: Path | None
+    access_log: Path | None = None
 
     def _load(self):
         ########## fetch_path ##########

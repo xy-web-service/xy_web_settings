@@ -17,21 +17,21 @@ from uuid import uuid4
 
 
 class Database(Section):
-    db_host: str | None
+    db_host: str | None = None
 
-    db_port: int | None
+    db_port: int | None = None
 
-    db_name: str | None
+    db_name: str | None = None
 
-    db_user: str | None
+    db_user: str | None = None
 
-    db_password: str | None
+    db_password: str | None = None
 
-    db_path: Path | None
+    db_path: Path | None = None
 
-    db_file: Path | None
+    db_file: Path | None = None
 
-    backup_path: Path | None
+    backup_path: Path | None = None
 
     def _load(self):
         ########## sync_data ##########

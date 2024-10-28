@@ -16,7 +16,7 @@ from xy_web_settings.Section.Section import *
 
 
 class Backup(Section):
-    path: Path | None
+    path: Path | None = None
 
     def _load(self):
         ########## fetch_path ##########

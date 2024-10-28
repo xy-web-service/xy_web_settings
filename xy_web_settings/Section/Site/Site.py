@@ -17,28 +17,28 @@ from uuid import uuid4
 
 
 class Site(Section):
-    host: str | None
+    host: str | None = None
 
-    debug_port: int | None
+    debug_port: int | None = None
 
     release_ports: list | None = [
         8401,
         8402,
     ]
 
-    cookie_secret: str | None
+    cookie_secret: str | None = None
 
-    login_url: str | None
+    login_url: str | None = None
 
-    logs_path: Path | None
+    logs_path: Path | None = None
 
-    info_log: Path | None
+    info_log: Path | None = None
 
-    error_log: Path | None
+    error_log: Path | None = None
 
-    warn_log: Path | None
+    warn_log: Path | None = None
 
-    backup_path: Path | None
+    backup_path: Path | None = None
 
     def _load(self):
         ########## sync_data ##########

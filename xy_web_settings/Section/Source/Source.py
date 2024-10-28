@@ -17,13 +17,13 @@ from xy_web_settings.Section.Section import *
 
 
 class Source(Section):
-    path: Path | None
+    path: Path | None = None
 
-    library_path: Path | None
+    library_path: Path | None = None
 
-    test_path: Path | None
+    test_path: Path | None = None
 
-    server_path: Path | None
+    server_path: Path | None = None
 
     def _load(self):
         ########## fetch_path ##########
