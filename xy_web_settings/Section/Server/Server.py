@@ -1,14 +1,6 @@
 # -*- coding: UTF-8 -*-
 __author__ = "余洋"
 __doc__ = "Server"
-''' 
- * @Author: 余洋 yuyangit.0515@qq.com
- * @Date: 2024-10-21 12:20:21
- * @LastEditors: 余洋 yuyangit.0515@qq.com
- * @LastEditTime: 2024-10-21 12:32:19
- * @FilePath: /xy_web_settings/xy_web_settings/Section/Server/Server.py
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- '''
 """
   * @File    :   Server.py
   * @Time    :   2023/11/09 15:55:28
@@ -24,39 +16,63 @@ from xy_web_settings.Section.Section import *
 
 
 class Server(Section):
-    path: Path = Path("../workspace/server/")
+    path: Path | None
 
-    config_path: Path = Path("../workspace/server/config/")
+    config_path: Path | None
 
-    site_path: Path = Path("../workspace/server/site/")
+    site_path: Path | None
 
-    admin_path: Path = Path("../workspace/server/admin/")
+    admin_path: Path | None
 
-    logs_path: Path = Path("../workspace/logs/server/")
+    logs_path: Path | None
 
-    info_log: Path = Path("../workspace/logs/server/info.log")
+    info_log: Path | None
 
-    error_log: Path = Path("../workspace/logs/server/error.log")
+    error_log: Path | None
 
-    warn_log: Path = Path("../workspace/logs/server/warn.log")
+    warn_log: Path | None
 
     def _load(self):
         ########## fetch_path ##########
 
-        self.path = self._fetch_path("path", self.path)
+        self.path = self._fetch_path(
+            "path",
+            Path("../workspace/server/"),
+        )
 
-        self.config_path = self._fetch_path("config_path", self.config_path)
+        self.config_path = self._fetch_path(
+            "config_path",
+            Path("../workspace/server/config/"),
+        )
 
-        self.site_path = self._fetch_path("site_path", self.site_path)
+        self.site_path = self._fetch_path(
+            "site_path",
+            Path("../workspace/server/site/"),
+        )
 
-        self.admin_path = self._fetch_path("admin_path", self.admin_path)
+        self.admin_path = self._fetch_path(
+            "admin_path",
+            Path("../workspace/server/admin/"),
+        )
 
-        self.logs_path = self._fetch_path("logs_path", self.logs_path)
+        self.logs_path = self._fetch_path(
+            "logs_path",
+            Path("../workspace/logs/server/"),
+        )
 
-        self.info_log = self._fetch_path("info_log", self.info_log)
+        self.info_log = self._fetch_path(
+            "info_log",
+            Path("../workspace/logs/server/info.log"),
+        )
 
-        self.error_log = self._fetch_path("error_log", self.error_log)
+        self.error_log = self._fetch_path(
+            "error_log",
+            Path("../workspace/logs/server/error.log"),
+        )
 
-        self.warn_log = self._fetch_path("warn_log", self.warn_log)
+        self.warn_log = self._fetch_path(
+            "warn_log",
+            Path("../workspace/logs/server/warn.log"),
+        )
 
         super()._load()

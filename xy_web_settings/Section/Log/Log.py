@@ -11,28 +11,40 @@ __doc__ = "Log"
   * @Desc    :   
 """
 
-
+from pathlib import Path
 from xy_web_settings.Section.Section import *
 
 
 class Log(Section):
-    path: Path = Path("../workspace/logs/")
+    path: Path | None
 
-    info_log: Path = Path("../workspace/logs/info.log")
+    info_log: Path | None
 
-    error_log: Path = Path("../workspace/logs/error.log")
+    error_log: Path | None
 
-    warn_log: Path = Path("../workspace/logs/warn.log")
+    warn_log: Path | None
 
     def _load(self):
         ########## fetch_path ##########
 
-        self.path = self._fetch_path("path", self.path)
+        self.path = self._fetch_path(
+            "path",
+            Path("../workspace/logs/"),
+        )
 
-        self.info_log = self._fetch_path("info_log", self.info_log)
+        self.info_log = self._fetch_path(
+            "info_log",
+            Path("../workspace/logs/info.log"),
+        )
 
-        self.error_log = self._fetch_path("error_log", self.error_log)
+        self.error_log = self._fetch_path(
+            "error_log",
+            Path("../workspace/logs/error.log"),
+        )
 
-        self.warn_log = self._fetch_path("warn_log", self.warn_log)
+        self.warn_log = self._fetch_path(
+            "warn_log",
+            Path("../workspace/logs/warn.log"),
+        )
 
         super()._load()

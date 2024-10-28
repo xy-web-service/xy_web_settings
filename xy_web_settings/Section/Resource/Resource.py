@@ -1,14 +1,6 @@
 # -*- coding: UTF-8 -*-
 __author__ = "余洋"
 __doc__ = "Resource"
-''' 
- * @Author: 余洋 yuyangit.0515@qq.com
- * @Date: 2024-10-21 12:20:21
- * @LastEditors: 余洋 yuyangit.0515@qq.com
- * @LastEditTime: 2024-10-21 12:32:25
- * @FilePath: /xy_web_settings/xy_web_settings/Section/Resource/Resource.py
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- '''
 """
   * @File    :   Resource.py
   * @Time    :   2023/11/09 15:55:35
@@ -24,33 +16,51 @@ from xy_web_settings.Section.Section import *
 
 
 class Resource(Section):
-    media_url: str | None = "/media/"
+    media_url: str | None
 
-    media_path: Path = Path("../media/")
+    media_path: Path | None
 
-    static_url: str | None = "/static/"
+    static_url: str | None
 
-    static_path: Path = Path("../static/")
+    static_path: Path | None
 
-    tmp_path: Path = Path("../workspace/tmp/")
+    tmp_path: Path | None
 
-    template_path: Path = Path("../template/")
+    template_path: Path | None
 
     def _load(self):
         ########## sync_data ##########
 
-        self.media_url = self._sync_data("media_url", self.media_url)
+        self.media_url = self._sync_data(
+            "media_url",
+            "/media/",
+        )
 
-        self.static_url = self._sync_data("static_url", self.static_url)
+        self.static_url = self._sync_data(
+            "static_url",
+            "/static/",
+        )
 
         ########## fetch_path ##########
 
-        self.media_path = self._fetch_path("media_path", self.media_path)
+        self.media_path = self._fetch_path(
+            "media_path",
+            Path("../media/"),
+        )
 
-        self.static_path = self._fetch_path("static_path", self.static_path)
+        self.static_path = self._fetch_path(
+            "static_path",
+            Path("../static/"),
+        )
 
-        self.tmp_path = self._fetch_path("tmp_path", self.tmp_path)
+        self.tmp_path = self._fetch_path(
+            "tmp_path",
+            Path("../workspace/tmp/"),
+        )
 
-        self.template_path = self._fetch_path("template_path", self.template_path)
+        self.template_path = self._fetch_path(
+            "template_path",
+            Path("../template/"),
+        )
 
         super()._load()

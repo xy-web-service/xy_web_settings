@@ -1,14 +1,6 @@
 # -*- coding: UTF-8 -*-
 __author__ = "余洋"
 __doc__ = "Backup"
-''' 
- * @Author: 余洋 yuyangit.0515@qq.com
- * @Date: 2024-10-21 12:20:21
- * @LastEditors: 余洋 yuyangit.0515@qq.com
- * @LastEditTime: 2024-10-21 12:32:46
- * @FilePath: /xy_web_settings/xy_web_settings/Section/Backup/Backup.py
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- '''
 """
   * @File    :   Backup.py
   * @Time    :   2023/11/09 15:56:14
@@ -24,11 +16,11 @@ from xy_web_settings.Section.Section import *
 
 
 class Backup(Section):
-    path: Path = Path("../workspace/backup/")
+    path: Path | None
 
     def _load(self):
         ########## fetch_path ##########
 
-        self.path = self._fetch_path("path", self.path)
+        self.path = self._fetch_path("path", Path("../workspace/backup/"))
 
         super()._load()

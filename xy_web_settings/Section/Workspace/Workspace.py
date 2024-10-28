@@ -1,22 +1,24 @@
 # -*- coding: UTF-8 -*-
 __author__ = "余洋"
+__doc__ = "Workspace"
+"""
+  * @File    :   Workspace.py
+  * @Time    :   2024/10/28 09:32:42
+  * @Author  :   余洋
+  * @Version :   0.0.1
+  * @Contact :   yuyangit.0515@qq.com
+  * @License :   (C)Copyright 2019-2024, 希洋 (Ship of Ocean)
+  * @Desc    :   
+"""
 
-''' 
- * @Author: 余洋 yuyangit.0515@qq.com
- * @Date: 2024-10-21 12:20:21
- * @LastEditors: 余洋 yuyangit.0515@qq.com
- * @LastEditTime: 2024-10-21 12:31:27
- * @FilePath: /xy_web_settings/xy_web_settings/Section/Workspace/Workspace.py
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- '''
 from pathlib import Path
 from xy_web_settings.Section.Section import *
 
 
 class Workspace(Section):
-    path: Path = Path("../workspace/")
+    path: Path | None
 
     def _load(self):
-        self.path = self._fetch_path("path", self.path)
+        self.path = self._fetch_path("path", Path("../workspace/"))
 
         super()._load()

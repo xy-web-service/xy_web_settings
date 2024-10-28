@@ -19,5 +19,5 @@ class Development(Section):
 
     def _load(self):
         ########## sync_data ##########
-        self.debug = self._sync_data("debug", self.debug)
+        self.debug = self._sync_data("debug", True)
         super()._load()

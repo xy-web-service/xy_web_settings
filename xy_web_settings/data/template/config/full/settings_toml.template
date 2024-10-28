@@ -64,7 +64,7 @@ logs_path = "{server_logs_path}"
 
 [SOURCE]
 
-# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.cfg)所在目录的路径
+# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.toml)所在目录的路径
 
 # 源码主目录
 path = "{source_path}"
@@ -83,7 +83,7 @@ server_path = "{server_path}"
 
 [RESOURCE]
 
-# 若在Docker容器内，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.cfg)所在目录的路径
+# 若在Docker容器内，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.toml)所在目录的路径
 
 # 媒体文件url路径
 media_url = "{media_url}"
@@ -108,7 +108,7 @@ template_path = "{template_path}"
 
 [SITE]
 
-# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.cfg)所在目录的路径
+# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.toml)所在目录的路径
 
 # 主机地址, 若在Docker容器内运行，可设置为Docker容器名称（当容器在同一个网络中）， 默认: 0.0.0.0
 host = "{site_host}"
@@ -159,7 +159,7 @@ backup_path = "{admin_backup_path}"
 
 [NGINX]
 
-# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.cfg)所在目录的路径
+# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.toml)所在目录的路径
 
 # nginx主目录
 path = "{nginx_path}"
@@ -174,7 +174,7 @@ logs_path = "{nginx_logs_path}"
 
 [DATABASE]
 
-# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.cfg)所在目录的路径
+# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.toml)所在目录的路径
 
 # 数据库主机地址，支持远程主机地址, 可设置 域名 或 ip
 db_host = "{db_host}"
@@ -201,7 +201,7 @@ backup_path = "{db_backup_path}"
 
 [LOG]
 
-# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.cfg)所在目录的路径
+# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.toml)所在目录的路径
 
 # 日志主目录
 path = "{logs_path}"
@@ -211,7 +211,7 @@ path = "{logs_path}"
 
 [BACKUP]
 
-# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.cfg)所在目录的路径
+# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.toml)所在目录的路径
 
 # 备份主目录
 path = "{backup_path}"
@@ -221,6 +221,6 @@ path = "{backup_path}"
 
 [WORKSPACE]
 
-# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.cfg)所在目录的路径
+# 若在Docker容器内运行，则为Docker容器内部路径, 如果为相对路径则相对于配置文件(settings.toml)所在目录的路径
 # 工作空间主目录
 path = "{workspace_path}"
