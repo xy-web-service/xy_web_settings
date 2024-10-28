@@ -53,8 +53,8 @@ class Settings(xySettings):
 
     def reload(self, settings_cfg_path: Path):
         super().reload(settings_cfg_path)
-        self.project = self.__make_section(Project)
-        self.runner = self.__make_section(Runner)
+        self.project = self.make_section(Project)
+        self.runner = self.make_section(Runner)
 
 if __name__ == "__main__":
     settings = Settings()
