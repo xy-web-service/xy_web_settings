@@ -18,7 +18,7 @@ verbose_name = "xy-web-service Demo"
 description = "xy-web-service Demo"
 
 # 项目路径
-path = "/home/余洋/workspace/beachstudio/development/xy_web_demo"
+path = "/home/helios/workspace/beachstudio/development/xy_web_demo"
 
 # ######################## xy_web_work运行配置 ###########################
 

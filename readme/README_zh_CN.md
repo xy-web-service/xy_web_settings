@@ -63,6 +63,7 @@ if __name__ == "__main__":
     print(f"project.name ===> {settings.project.name}")
     print(f"project.identifier ===> {settings.project.identifier}")
 ```
+
 ```toml
 # xy_web.toml
 # ######################## xy_web_work配置 ###########################
@@ -84,7 +85,7 @@ verbose_name = "xy-web-service Demo"
 description = "xy-web-service Demo"
 
 # 项目路径
-path = "/home/余洋/workspace/beachstudio/development/xy_web_demo"
+path = "/home/helios/workspace/beachstudio/development/xy_web_demo"
 
 # ######################## xy_web_work运行配置 ###########################
 
@@ -103,7 +104,7 @@ runner = "Runner.Runner"
 ```bash
 # bash
 python main.py
-# project ===> {'path': '/home/余洋/workspace/beachstudio/development/xy_web_demo', 'name': 'xy_web_demo', 'verbose_name': 'xy-web-service Demo', 'identifier': 'd842087be5204c85a8bef764815348b5', 'description': 'xy-web-service Demo'}
+# project ===> {'path': '/home/helios/workspace/beachstudio/development/xy_web_demo', 'name': 'xy_web_demo', 'verbose_name': 'xy-web-service Demo', 'identifier': 'd842087be5204c85a8bef764815348b5', 'description': 'xy-web-service Demo'}
 # project.name ===> xy_web_demo
 # project.identifier ===> d842087be5204c85a8bef764815348b5
 ```
