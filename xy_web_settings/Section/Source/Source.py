@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# -*- coing: UTF-8 -*-
 __author__ = "余洋"
 __doc__ = "Source"
 """
@@ -12,7 +12,7 @@ __doc__ = "Source"
 """
 
 from pathlib import Path
-from xy_file.File import File
+from xy_file.Object.File import File
 from xy_web_settings.Section.Section import *
 
 
