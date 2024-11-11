@@ -8,9 +8,8 @@
 -->
 # xy_web_settings
 
-- [简体中文](./README.md)
-- [繁體中文](readme/README.zh-hant.md)
-- [English](readme/README.en.md)
+| [简体中文](./README.md)         | [繁體中文](readme/README.zh-hant.md)        |                      [English](readme/README.en.md)          |
+| ----------- | -------------|---------------------------------------|
 
 ## 说明
 
@@ -18,9 +17,9 @@ xy-web-service服务设置模块.
 
 ## 源码仓库
 
-- <a href="https://github.com/xy-web-service/xy_web_settings.git" target="_blank">Github地址</a>  
-- <a href="https://gitee.com/xy-opensource/xy_web_settings.git" target="_blank">Gitee地址</a>  
-- <a href="https://gitcode.com/xy-opensource/xy_web_settings.git" target="_blank">GitCode地址</a>  
+| [Github](https://github.com/xy-web-service/xy_web_settings.git)         | [Gitee](https://gitee.com/xy-opensource/xy_web_settings.git)        |                      [GitCode](https://gitcode.com/xy-opensource/xy_web_settings.git)          |
+| ----------- | -------------|---------------------------------------|
+
 
 ## 安装
 
