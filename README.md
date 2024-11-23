@@ -116,7 +116,7 @@ xy_web_settings 根据 <木兰宽松许可证, 第2版> 获得许可。有关详
 
 如果小伙伴们觉得这些工具还不错的话，能否请咱喝一杯咖啡呢?  
 
-![Pay-Total](./readme/Pay-Total.png)
+![pay-total](./readme/pay-total.png)
 
 
 ## 联系方式
